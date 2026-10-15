@@ -20,4 +20,44 @@
 <div class="faq-item"><h3>Kiedy warto skorzystać z interim marketing managera?</h3><p>Gdy firma potrzebuje czasowego lidera marketingu, wsparcia przy zmianie organizacyjnej, uporządkowania procesów lub realizacji ważnego projektu bez stałej rekrutacji.</p></div>
 </div></section>
 <section id="kontakt" class="section contact"><div class="wrap"><h2>Porozmawiajmy o strategii marketingowej Twojej firmy</h2><p>Potrzebujesz audytu marketingowego, wsparcia w rozwoju sprzedaży, strategii marki lub interim management? Opisz krótko wyzwanie i cel biznesowy.</p><a class="btn" href="mailto:dataverno@gmail.com?subject=Zapytanie%20o%20doradztwo%20marketingowe">dataverno@gmail.com</a><div class="socials" aria-label="Planowane kanały społecznościowe"><span title="Facebook — profil do podłączenia"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.51 1.49-3.9 3.77-3.9 1.09 0 2.23.19 2.23.19v2.46h-1.26c-1.24 0-1.62.77-1.62 1.56V12h2.77l-.44 2.89h-2.33v6.99A10 10 0 0 0 22 12z"/></svg>Facebook</span><span title="LinkedIn — profil do podłączenia"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 2H3.55C2.69 2 2 2.68 2 3.52v16.96c0 .84.69 1.52 1.55 1.52h16.9c.86 0 1.55-.68 1.55-1.52V3.52c0-.84-.69-1.52-1.55-1.52zM7.93 18.75H4.98V9.2h2.95v9.55zM6.45 7.9a1.71 1.71 0 1 1 0-3.42 1.71 1.71 0 0 1 0 3.42zm12.3 10.85H15.8V14.1c0-1.11-.02-2.54-1.55-2.54-1.55 0-1.79 1.21-1.79 2.46v4.73H9.51V9.2h2.83v1.3h.04c.39-.75 1.36-1.55 2.8-1.55 2.99 0 3.57 1.97 3.57 4.53v5.27z"/></svg>LinkedIn</span><span title="Instagram — profil do podłączenia"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7zm5 3a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6zm5.5-2.7a1.2 1.2 0 1 1 0 2.4 1.2 1.2 0 0 1 0-2.4z"/></svg>Instagram</span></div><p class="social-note">Profile społecznościowe są w przygotowaniu. Linki zostaną aktywowane po utworzeniu kont.</p></div></section>
-</main><footer><div class="wrap foot"><span>© <span id="year"></span> DATAVERNO. Wszelkie prawa zastrzeżone.</span><span>Doradztwo marketingowe • Strategia • Sprzedaż</span></div></footer><script>document.getElementById('year').textContent=new Date().getFullYear();</script></body></html>
+</main><footer><div class="wrap foot"><span>© <span id="year"></span> DATAVERNO. Wszelkie prawa zastrzeżone.</span><span>Doradztwo marketingowe • Strategia • Sprzedaż</span></div></footer><script>document.getElementById('year').textContent=new Date().getFullYear();</script><style>
+#ga-consent{position:fixed;bottom:16px;left:16px;right:16px;max-width:680px;margin:auto;background:#fff;color:#101b30;border:1px solid #d9e3ef;border-radius:14px;padding:20px;box-shadow:0 12px 40px #101b3040;z-index:9999;font:15px/1.5 system-ui,sans-serif}
+#ga-consent[hidden]{display:none}
+#ga-consent p{margin:8px 0 14px;color:#273c58}
+#ga-consent .actions{display:flex;gap:10px;flex-wrap:wrap}
+#ga-consent button,.ga-pref{cursor:pointer;border-radius:8px;padding:9px 15px;font:inherit}
+#ga-consent button{background:#1665b7;color:white;border:1px solid #1665b7}
+#ga-consent button.secondary{background:white;color:#101b30;border-color:#8ca1ba}
+.ga-pref{background:transparent;color:inherit;border:1px solid currentColor;margin-left:12px;font-size:12px;padding:3px 8px}
+</style>
+<div id="ga-consent" role="dialog" aria-label="Zgoda na analitykę" aria-modal="false" hidden>
+<strong>Ustawienia prywatności</strong>
+<p>Za Twoją zgodą korzystamy z Google Analytics 4, aby mierzyć odwiedziny i ulepszać stronę DATAVERNO. Analityczne pliki cookie uruchamiamy dopiero po akceptacji. Odmowa nie ogranicza korzystania ze strony. Zgodę możesz zmienić w stopce.</p>
+<div class="actions"><button id="ga-accept" type="button">Akceptuję analitykę</button><button id="ga-reject" class="secondary" type="button">Odrzucam</button></div>
+</div>
+<script>
+(function(){
+  var id='G-700K7T24NR', key='dataverno-analytics-consent', banner=document.getElementById('ga-consent');
+  var consent=null;try{consent=localStorage.getItem(key)}catch(e){}
+  function enableAnalytics(){
+    if(window.__datavernoGAStarted)return;
+    window.__datavernoGAStarted=true;
+    window.dataLayer=window.dataLayer||[];
+    window.gtag=function(){window.dataLayer.push(arguments)};
+    window.gtag('js',new Date());
+    window.gtag('config',id);
+    var script=document.createElement('script');
+    script.async=true;
+    script.src='https://www.googletagmanager.com/gtag/js?id='+encodeURIComponent(id);
+    document.head.appendChild(script);
+  }
+  function save(value){try{localStorage.setItem(key,value)}catch(e){}banner.hidden=true;if(value==='accepted')enableAnalytics();}
+  document.getElementById('ga-accept').addEventListener('click',function(){save('accepted')});
+  document.getElementById('ga-reject').addEventListener('click',function(){save('rejected')});
+  var pref=document.createElement('button');
+  pref.type='button';pref.className='ga-pref';pref.textContent='Ustawienia cookies';
+  pref.addEventListener('click',function(){banner.hidden=false});
+  document.querySelector('footer .foot').appendChild(pref);
+  if(consent==='accepted')enableAnalytics();else if(consent!=='rejected')banner.hidden=false;
+})();
+</script></body></html>
